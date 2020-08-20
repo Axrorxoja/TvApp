@@ -12,7 +12,7 @@ class TVTest {
     val mockDisplay = Mockito.mock(Display::class.java)
     val mockVoiceControl = Mockito.mock(VoiceControl::class.java)
     val mockChannelControl = Mockito.mock(ChannelControl::class.java)
-    val tv = TV(mockDisplay,mockVoiceControl,mockChannelControl)
+//    val tv = TV(mockDisplay,mockVoiceControl,mockChannelControl)
 
     @Test
     fun testDecreaseVoice() {

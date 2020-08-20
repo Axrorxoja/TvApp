@@ -1,10 +1,18 @@
 package data
 
-class TV(
-    private val display: IDisplay,
-    private val voiceControl: IVoiceControl,
-    private val channelControl: IChannelControl
-) {
+import javax.inject.Inject
+import javax.inject.Singleton
+
+@Singleton
+class TV {
+    @Inject
+    lateinit var display: IDisplay
+
+    @Inject
+    lateinit var voiceControl: IVoiceControl
+
+    @Inject
+    lateinit var channelControl: IChannelControl
 
     fun decreaseVoice() = voiceControl.decreaseVoice()
 

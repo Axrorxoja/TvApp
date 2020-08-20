@@ -1,6 +1,6 @@
 package data
 
-class VoiceControl : IVoiceControl {
+class VoiceControl constructor() : IVoiceControl {
     private val MAX_VOLUME = 100
     private val MIN_VOLUME = 0
 
